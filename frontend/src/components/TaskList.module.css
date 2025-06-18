@@ -1,0 +1,112 @@
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .error {
+    color: #e63946;
+    background-color: #fff0f0;
+    border: 1px solid #ffcccc;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9fafb;
+    color: #111827; /* 👈 Add this line to ensure text is visible */
+    transition: border 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #6366f1;
+    background-color: #fff;
+  }
+  
+  .addButton {
+    padding: 12px 18px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .addButton:hover {
+    background-color: #4f46e5;
+  }
+  
+  .taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    margin-bottom: 10px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .taskItem:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .taskTitle {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 16px;
+    color: #374151;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+  }
+  
+  .deleteButton {
+    background-color: transparent;
+    border: none;
+    color: #ef4444;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .deleteButton:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+  }
+  
