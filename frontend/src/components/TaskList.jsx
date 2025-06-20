@@ -13,7 +13,7 @@ const TaskList = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/tasks/');
+      const res = await axios.get('http://task-api.codex.com/api/tasks/');
       setTasks(res.data);
     } catch (err) {
       console.log('Error fetching tasks:', err);
@@ -25,7 +25,7 @@ const TaskList = () => {
     if (!newTask.trim()) return;
 
     try {
-      const res = await axios.post('http://localhost:8000/api/tasks/', {
+      const res = await axios.post('http://task-api.codex.com/api/tasks/', {
         title: newTask,
         completed: false,
       });
@@ -41,7 +41,7 @@ const TaskList = () => {
 
   const toggleTaskCompletion = async (task) => {
     try {
-      const res = await axios.put(`http://localhost:8000/api/tasks/${task.id}/`, {
+      const res = await axios.put(`http://task-api.codex.com/api/tasks/${task.id}/`, {
         title: task.title,
         completed: !task.completed,
       });
@@ -55,7 +55,7 @@ const TaskList = () => {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/tasks/${id}/`);
+      await axios.delete(`http://task-api.codex.com/api/tasks/${id}/`);
       setTasks(tasks.filter(task => task.id !== id));
     } catch (err) {
       console.log('Error deleting task:', err);

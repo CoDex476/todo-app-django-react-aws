@@ -3,3 +3,8 @@ djangorestframework
 django-cors-headers
 python-dotenv
 PyMySQL
+
+
+# hosting puposes 
+gunicorn
+whitenoise
