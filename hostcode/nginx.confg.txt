@@ -1,6 +1,6 @@
 # Backend Nginx Config
 server {
-        server_name task-api.thecodefarmer.com www.task-api.thecodefarmer.com;
+        server_name task-api.codex.com www.task-api.codex.com;
         error_log  /var/log/nginx/error.log  error;
 
         location = /favicon.ico {
